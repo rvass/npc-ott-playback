@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTT Playback</title>
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+    <style>
+        .pip {
+            display: inline-block;
+        }
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>OTT Playback</h1>
+    <div class="pip">
+        <video muted autoplay id='life' class="video-js vjs-default-skin" width="400" height="300" controls>
+            <source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008326/life-adl/master.m3u8">
+        </video>
+        <p>Adelaide Life</p>
+    </div>
+    <div class="pip">
+        <video muted autoplay id='rush' class="video-js vjs-default-skin" width="400" height="300" controls>
+            <source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2010627/rush-adl/master.m3u8">
+        </video>
+        <p>Adelaide Rush</p>    
+    </div>
+    
+
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+    <script>
+        
+        var player1 = videojs('life');
+        player1.autoplay();
+        var player2 = videojs('rush');
+        player2.autoplay();
+        videojs('player', {autoplay: true});        
+        
+	
+
+        
+    </script>
+
 </body>
 </html>
