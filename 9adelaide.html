@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+<!--frontmatter turns a static page into a jekyll page template-->
+
+<main>
+		<div class="npc-wrapper">
+			<div class="pip">
+				<video id='npc-ade-nine' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008323/ch9-adl/master.m3u8">
+				</video>
+				<h3>NPC Adelaide Nine</h3>
+			</div>
+			<div class="pip">
+				<video id='npc-ade-gem' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008314/gem-adl/master.m3u8">
+				</video>
+				<h3>NPC Adelaide Gem</h3>
+			</div>
+			<div class="pip">
+				<video id='npc-ade-go' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008319/go-adl/master.m3u8">
+				</video>
+				<h3>NPC Adelaide Go</h3>
+			</div>
+			<div class="pip">
+				<video id='npc-ade-life' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008326/life-adl/master.m3u8">
+				</video>
+				<h3>NPC Adelaide Life</h3>
+			</div>
+			<div class="pip">
+				<video id='npc-ade-rush' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2010627/rush-adl/master.m3u8">
+				</video>
+				<h3>NPC Adelaide Rush</h3>
+			</div>
+		</div>
+		<div class="tbs-wrapper">
+			<div class="pip">
+				<video id='tbs-ade-nine' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008323-b/ch9-adl/master.m3u8">
+				</video>
+				<h3>TBS Adelaide Nine</h3>
+			</div>
+			<div class="pip">
+				<video id='tbs-ade-gem' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008314-b/gem-adl/master.m3u8">
+				</video>
+				<h3>TBS Adelaide Gem</h3>
+			</div>
+			<div class="pip">
+				<video id='tbs-ade-go' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008319-b/go-adl/master.m3u8">
+				</video>
+				<h3>TBS Adelaide Go</h3>
+			</div>
+			<div class="pip">
+				<video id='tbs-ade-life' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2008326-b/life-adl/master.m3u8">
+				</video>
+				<h3>TBS Adelaide Life</h3>
+			</div>
+			<div class="pip">
+				<video id='tbs-ade-rush' class="video-js vjs-default-skin" width="360" height="262" controls muted autoplay>
+					<source type="application/x-mpegURL" src="https://9now-livestreams.akamaized.net/hls/live/2010627-b/rush-adl/master.m3u8">
+				</video>
+				<h3>TBS Adelaide Rush</h3>
+			</div>
+			
+		</div>
+
+	</main>
+
+	<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+	<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+	
+	<!--NPC-->
+	<script>
+		var player1 = videojs('npc-ade-nine');
+        player1.autoplay();
+        
+        var player2 = videojs('npc-ade-gem');
+        player2.autoplay();
+        
+        var player3 = videojs('npc-ade-go');
+        player3.autoplay();
+        
+        var player4 = videojs('npc-ade-life');
+        player4.autoplay();
+        
+        var player5 = videojs('npc-ade-rush');
+        player5.autoplay();        
+        
+        videojs('player', {autoplay: true});
+	</script>
+	
+	<!--TBS-->
+	<script>
+		var player1 = videojs('tbs-ade-nine');
+        player1.autoplay();
+        
+        var player2 = videojs('tbs-ade-gem');
+        player2.autoplay();
+        
+        var player3 = videojs('tbs-ade-go');
+        player3.autoplay();
+        
+        var player4 = videojs('tbs-ade-life');
+        player4.autoplay();
+        
+        var player5 = videojs('tbs-ade-rush');
+        player5.autoplay();        
+        
+        videojs('player', {autoplay: true});
+	</script>

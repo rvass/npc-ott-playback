@@ -1,5 +1,5 @@
 html {
-	font-family: arial, sans-serif;
+
 }
 
 body {
@@ -9,19 +9,20 @@ body {
 	margin: 0;
 	height: 100vh;
 	margin: 0 20px;	
+	font-family: helvetica, arial, sans;
+	background-color: #111;
 }
 
 /*HEADER STYLES*/
 
-header {
+.header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	align-content: center;
 	height: 100px;
-
-
 }
-#logo {
+.logo {
 	flex: 1;
 }
 
@@ -29,18 +30,18 @@ h1 {
 	flex: 1;
 	text-align: center;
 	font-size: 3em;
+	color: white;
+	height: 100%;
+	line-height: 100%;
 }
 
-nav {
-	/*width: 9%;*/
+.header-nav {
 	height: 50px;
-	/*position: -webkit-sticky;*/
-	/*position: sticky;*/
 	/*top: 0;*/
 	text-align: right;
 	flex: 1;
 }
-nav > ul {
+.header-nav > ul {
 	margin: 0;
 	padding: 0;
 }
@@ -132,7 +133,7 @@ nav > ul {
 main {
 	/*width: 90%;*/
 	/*height: 100vh;*/
-	background-color: white;
+	/*background-color: white;*/
 	padding: 20px;
 }
 
@@ -149,6 +150,6 @@ main {
 
 h3 {
 	text-align: center;
-	font-weight: bold;
-	/*padding: 10px 0;*/
+	font-weight: normal;
+	color: white;
 }
